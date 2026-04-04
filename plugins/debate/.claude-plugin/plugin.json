@@ -1,0 +1,17 @@
+{
+  "name": "debate",
+  "version": "1.0.0",
+  "description": "Adversarial debate with three AI subagents — Proponent argues for, Critic argues against, Judge delivers verdict. Stress-test any plan or decision.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "skills": "./skills/",
+  "commands": ["./commands"],
+  "keywords": [
+    "debate",
+    "adversarial",
+    "decision-making",
+    "analysis",
+    "productivity"
+  ]
+}
