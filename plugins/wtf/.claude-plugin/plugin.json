@@ -1,0 +1,16 @@
+{
+  "name": "wtf",
+  "version": "1.0.0",
+  "description": "Like /btw but angry — expresses dramatic frustration and disappointment before answering your question clearly and correctly.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "commands": ["./commands"],
+  "keywords": [
+    "wtf",
+    "angry",
+    "frustrated",
+    "personality",
+    "questions"
+  ]
+}
