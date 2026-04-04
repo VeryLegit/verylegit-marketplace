@@ -1,0 +1,21 @@
+{
+  "name": "verylegit-marketplace",
+  "description": "Productivity and personality plugins for Claude Code",
+  "owner": {
+    "name": "VeryLegit"
+  },
+  "plugins": [
+    {
+      "name": "debate",
+      "description": "Adversarial debate with three AI subagents — Proponent argues for, Critic argues against, Judge delivers verdict. Stress-test any plan or decision.",
+      "source": "./plugins/debate",
+      "category": "productivity"
+    },
+    {
+      "name": "wtf",
+      "description": "Like /btw but angry — expresses dramatic frustration and disappointment before answering your question clearly and correctly.",
+      "source": "./plugins/wtf",
+      "category": "personality"
+    }
+  ]
+}
