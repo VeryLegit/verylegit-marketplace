@@ -6,12 +6,12 @@ A curated collection of plugins for [Claude Code](https://claude.ai/claude-code)
 
 ```bash
 # Add the marketplace
-claude plugins add-marketplace VeryLegit/verylegit-marketplace
+claude plugins marketplace add VeryLegit/verylegit-marketplace
 
 # Install what you want
-claude plugins install debate
-claude plugins install wtf
-claude plugins install bear-notes
+claude plugins install debate@verylegit-marketplace
+claude plugins install wtf@verylegit-marketplace
+claude plugins install bear-notes@verylegit-marketplace
 ```
 
 ---
