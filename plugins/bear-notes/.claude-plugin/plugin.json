@@ -1,0 +1,18 @@
+{
+  "name": "bear-notes",
+  "version": "1.0.0",
+  "description": "MCP server + skills for the Bear note-taking app. Search, read, create, and manage Bear notes directly from Claude Code. Reads the local SQLite database for instant access, uses x-callback-urls for writes.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "commands": ["./commands"],
+  "skills": "./skills/",
+  "keywords": [
+    "bear",
+    "notes",
+    "mcp",
+    "note-taking",
+    "productivity",
+    "macos"
+  ]
+}

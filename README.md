@@ -1,6 +1,6 @@
 # VeryLegit Plugins
 
-A curated collection of plugins for [Claude Code](https://claude.ai/claude-code). Sharper decisions. Angrier answers.
+A curated collection of plugins for [Claude Code](https://claude.ai/claude-code). Sharper decisions. Angrier answers. Bear notes access.
 
 ## Quick Start
 
@@ -11,6 +11,7 @@ claude plugins add-marketplace VeryLegit/verylegit-marketplace
 # Install what you want
 claude plugins install debate
 claude plugins install wtf
+claude plugins install bear-notes
 ```
 
 ---
@@ -73,6 +74,44 @@ It channels the energy of a senior dev who just found out the intern deployed to
 ```
 /wtf What does this regex even do?
 ```
+
+---
+
+## bear-notes
+
+**Search, read, create, and manage Bear notes directly from Claude Code.**
+
+Bundles an MCP server that reads Bear's local SQLite database for instant access to all your notes. Write operations use Bear's x-callback-url scheme.
+
+### Tools (via MCP)
+
+| Tool | What it does |
+|------|-------------|
+| `search_notes` | Full-text search across titles and content |
+| `get_note` | Read full note content by ID |
+| `list_recent_notes` | See recently modified notes |
+| `list_tags` | All tags with note counts |
+| `get_notes_by_tag` | Filter notes by tag |
+| `create_note` | Create a new note in Bear |
+| `add_to_note` | Append/prepend text to existing note |
+| `open_note` | Open a note in the Bear app |
+
+### Usage
+
+```
+/bear search meeting notes
+/bear recent 10
+/bear tags
+/bear read 42
+/bear create "My New Note"
+```
+
+The skill also auto-triggers when you reference "my notes", "Bear notes", or say "save this to a note".
+
+### Requirements
+
+- macOS with [Bear](https://bear.app) installed
+- Node.js 18+
 
 ---
 

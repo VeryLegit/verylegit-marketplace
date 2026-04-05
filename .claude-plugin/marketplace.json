@@ -16,6 +16,12 @@
       "description": "Like /btw but angry — expresses dramatic frustration and disappointment before answering your question clearly and correctly.",
       "source": "./plugins/wtf",
       "category": "personality"
+    },
+    {
+      "name": "bear-notes",
+      "description": "MCP server + skills for the Bear note-taking app. Search, read, create, and manage Bear notes directly from Claude Code.",
+      "source": "./plugins/bear-notes",
+      "category": "productivity"
     }
   ]
 }
