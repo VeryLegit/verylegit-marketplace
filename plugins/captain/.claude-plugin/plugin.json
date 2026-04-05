@@ -1,0 +1,20 @@
+{
+  "name": "captain",
+  "version": "1.0.0",
+  "description": "Pirate-themed state machine for executing complex plans. ASCII helm, HITL gates with accept/redirect/rewind, git checkpoints at every node. Inspired by strongdm/attractor NLSpecs.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "skills": "./skills/",
+  "commands": ["./commands"],
+  "keywords": [
+    "state-machine",
+    "plan-execution",
+    "hitl",
+    "human-in-the-loop",
+    "git-checkpoints",
+    "pirate",
+    "workflow",
+    "productivity"
+  ]
+}

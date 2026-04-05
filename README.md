@@ -1,6 +1,6 @@
 # VeryLegit Plugins
 
-A curated collection of plugins for [Claude Code](https://claude.ai/claude-code). Sharper decisions. Angrier answers. Bear notes. iOS Simulator eyes.
+A curated collection of plugins for [Claude Code](https://claude.ai/claude-code). Sharper decisions. Angrier answers. Bear notes. iOS Simulator eyes. Pirate-guided development.
 
 ## Quick Start
 
@@ -9,11 +9,89 @@ A curated collection of plugins for [Claude Code](https://claude.ai/claude-code)
 claude plugins marketplace add VeryLegit/verylegit-marketplace
 
 # Install what you want
+claude plugins install captain@verylegit-marketplace
 claude plugins install debate@verylegit-marketplace
 claude plugins install wtf@verylegit-marketplace
 claude plugins install bear-notes@verylegit-marketplace
 claude plugins install ios-simulator@verylegit-marketplace
 ```
+
+---
+
+## captain
+
+**Pirate-themed state machine for executing any complex plan.**
+
+Inspired by [strongdm/attractor](https://github.com/strongdm/attractor) and its NLSpec approach to AI-driven software factories. Captain takes the core ideas — graph-based execution, human gates, checkpoint/resume — and wraps them in an ASCII helm with a pirate voice that guides you through any multi-step task.
+
+### How it works
+
+Your plan becomes a vertical flowchart. Each step is a lettered node. You pick which nodes are HITL (human-in-the-loop) gates. At every gate you get three single-key actions. Git tags checkpoint every node so you can always sail back.
+
+```
+ ╔═════════════════════════════════════╗
+ ║  CAPTAIN'S HELM — Auth System       ║
+ ║  [██░░░░░░░░] 17%   [a] Almanac    ║
+ ╠═════════════════════════════════════╣
+ ║  ┌───┐ Anchored   ┏━━━┓ At Sea     ║
+ ║  ┌ ─ ┐ Pending    ⊘ Skipped        ║
+ ║  ⚓ = HITL gate                     ║
+ ╚═════════════════════════════════════╝
+
+      ┌───────────────────────┐
+      │ [A] DB Schema       ⚓ │
+      └───────────────────────┘
+                  │
+                  ▼
+      ┏━━━━━━━━━━━━━━━━━━━━━━━┓
+      ┃ [B] Auth Middleware  ⚓ ┃
+      ┗━━━━━━━━━━━━━━━━━━━━━━━┛
+                  │
+                  ▼
+      ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┐
+      │ [C] Login Route        │
+      └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┘
+                  │
+                  ▼
+              ... etc
+```
+
+### HITL gates
+
+At every ⚓ node, you get three options:
+
+```
+ ⚓ HITL — [B] Auth Middleware complete.
+ Orders, Captain?  [a] accept  [d] redirect  [r] rewind
+```
+
+| Key | Action | What happens |
+|-----|--------|-------------|
+| `a` | **Accept** | Mark done, sail to next node |
+| `d` | **Redirect** | Redo this node with new instructions |
+| `r` | **Rewind** | Git reset to a previous node, redo from there |
+
+### Key features
+
+- **Dynamic nodes** — derived from your plan, not a fixed template
+- **`[a]` Almanac** — press anytime for pirate-flavored descriptions of every node
+- **Git checkpoints** — every node tagged (`captain/node-{letter}-{name}`), rewind resets cleanly
+- **Execution strategies** — direct (agent does it), subagent (dispatch a fresh hand), or manual (you do it)
+- **Pirate voice** — all output in full pirate tongue. Bugs are barnacles. Files are scrolls. The codebase is the ship. You are the Captain.
+
+### Usage
+
+```
+/captain Build a REST API with auth, rate limiting, and docs
+```
+
+```
+/captain Execute the migration plan in docs/migration.md
+```
+
+### Credits
+
+The state machine and human-gate concepts are inspired by [strongdm/attractor](https://github.com/strongdm/attractor), which pioneered the idea of NLSpecs (Natural Language Specifications) — human-readable specs intended to be directly usable by coding agents. Captain adapts Attractor's graph traversal, goal gates, and checkpoint/resume patterns into an interactive CLI experience.
 
 ---
 
