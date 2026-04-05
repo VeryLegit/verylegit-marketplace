@@ -1,0 +1,10 @@
+{
+  "name": "ios-simulator-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for iOS Simulator control",
+  "type": "module",
+  "main": "server.mjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}

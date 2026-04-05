@@ -1,6 +1,6 @@
 # VeryLegit Plugins
 
-A curated collection of plugins for [Claude Code](https://claude.ai/claude-code). Sharper decisions. Angrier answers. Bear notes access.
+A curated collection of plugins for [Claude Code](https://claude.ai/claude-code). Sharper decisions. Angrier answers. Bear notes. iOS Simulator eyes.
 
 ## Quick Start
 
@@ -12,6 +12,7 @@ claude plugins marketplace add VeryLegit/verylegit-marketplace
 claude plugins install debate@verylegit-marketplace
 claude plugins install wtf@verylegit-marketplace
 claude plugins install bear-notes@verylegit-marketplace
+claude plugins install ios-simulator@verylegit-marketplace
 ```
 
 ---
@@ -111,6 +112,52 @@ The skill also auto-triggers when you reference "my notes", "Bear notes", or say
 ### Requirements
 
 - macOS with [Bear](https://bear.app) installed
+- Node.js 18+
+
+---
+
+## ios-simulator
+
+**Full iOS Simulator control from Claude Code. Claude can finally see your app.**
+
+Bundles an MCP server wrapping `xcrun simctl` and AppleScript for complete simulator interaction. Claude can screenshot the simulator, see the image, and act on what it sees.
+
+### Tools (via MCP)
+
+| Category | Tools |
+|----------|-------|
+| **Visual** | `screenshot`, `set_appearance`, `set_content_size`, `override_status_bar`, `clear_status_bar` |
+| **Device** | `list_devices`, `boot_device`, `shutdown_device`, `erase_device` |
+| **Apps** | `install_app`, `launch_app`, `terminate_app`, `list_apps`, `app_info`, `get_app_container` |
+| **Interaction** | `tap`, `swipe`, `type_text`, `press_button`, `set_pasteboard`, `get_pasteboard` |
+| **Testing** | `send_push`, `open_url`, `set_location`, `clear_location`, `set_permission` |
+| **Debug** | `get_logs`, `add_media`, `reset_keychain` |
+
+### Usage
+
+```
+/sim screenshot        — See the app
+/sim boot              — Boot a simulator
+/sim dark              — Switch to dark mode
+/sim push com.my.app "Hello" "World"  — Test push
+/sim tap 200 400       — Tap center of screen
+/sim log MyApp 1m      — Last minute of logs
+/sim appstore          — Clean status bar + screenshot
+```
+
+### What makes this an unlock
+
+- **Claude can see the simulator** — screenshots return actual images
+- **Push notification testing** — custom payloads, no server needed
+- **Deep link testing** — `open_url` with any scheme
+- **Location simulation** — test geo features without moving
+- **Permission control** — grant/revoke without system dialogs
+- **App Store screenshots** — one command for clean status bar + capture
+- **Log reading** — filter console output by process name
+
+### Requirements
+
+- macOS with Xcode installed
 - Node.js 18+
 
 ---

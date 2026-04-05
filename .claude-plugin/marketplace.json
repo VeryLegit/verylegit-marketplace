@@ -22,6 +22,12 @@
       "description": "MCP server + skills for the Bear note-taking app. Search, read, create, and manage Bear notes directly from Claude Code.",
       "source": "./plugins/bear-notes",
       "category": "productivity"
+    },
+    {
+      "name": "ios-simulator",
+      "description": "MCP server for full iOS Simulator control — screenshots, tap, type, push notifications, deep links, location, permissions, dark mode, logs, and more.",
+      "source": "./plugins/ios-simulator",
+      "category": "productivity"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "name": "ios-simulator",
+  "version": "1.0.0",
+  "description": "MCP server for iOS Simulator control. Screenshot, tap, type, push notifications, deep linking, location simulation, permissions, dark mode, logs, and more — all from Claude Code.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "commands": ["./commands"],
+  "skills": "./skills/",
+  "keywords": [
+    "ios",
+    "simulator",
+    "xcode",
+    "mcp",
+    "mobile",
+    "react-native",
+    "swift",
+    "macos"
+  ]
+}
