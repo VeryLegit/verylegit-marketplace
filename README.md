@@ -12,6 +12,7 @@ claude plugins marketplace add VeryLegit/verylegit-marketplace
 claude plugins install captain@verylegit-marketplace
 claude plugins install debate@verylegit-marketplace
 claude plugins install wtf@verylegit-marketplace
+claude plugins install tldr@verylegit-marketplace
 claude plugins install bear-notes@verylegit-marketplace
 claude plugins install ios-simulator@verylegit-marketplace
 ```
@@ -153,6 +154,24 @@ It channels the energy of a senior dev who just found out the intern deployed to
 ```
 /wtf What does this regex even do?
 ```
+
+---
+
+## tldr
+
+**Brutally simplify your last response.**
+
+Sometimes Claude gives you a wall of text when all you needed was a sentence. `/tldr` looks at the previous response and crushes it down to the bare minimum — no fluff, no caveats, no preamble. Just the answer.
+
+### Usage
+
+Type `/tldr` with no arguments right after any verbose response:
+
+```
+/tldr
+```
+
+You get 1-3 sentences max, in plain language. If code was in the original, only the essential code survives.
 
 ---
 

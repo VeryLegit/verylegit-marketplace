@@ -1,0 +1,17 @@
+{
+  "name": "tldr",
+  "version": "1.0.0",
+  "description": "Brutally simplify any output — strip the fluff and give the shortest possible summary.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "commands": ["./commands"],
+  "keywords": [
+    "tldr",
+    "summarize",
+    "simplify",
+    "short",
+    "brief",
+    "concise"
+  ]
+}

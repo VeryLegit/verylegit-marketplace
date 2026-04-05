@@ -28,6 +28,12 @@
       "description": "MCP server for full iOS Simulator control — screenshots, tap, type, push notifications, deep links, location, permissions, dark mode, logs, and more.",
       "source": "./plugins/ios-simulator",
       "category": "productivity"
+    },
+    {
+      "name": "tldr",
+      "description": "Brutally simplify any output — strip the fluff and give the shortest possible summary.",
+      "source": "./plugins/tldr",
+      "category": "productivity"
     }
   ]
 }
