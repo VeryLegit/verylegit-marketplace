@@ -13,6 +13,7 @@ claude plugins install captain@verylegit-marketplace
 claude plugins install debate@verylegit-marketplace
 claude plugins install wtf@verylegit-marketplace
 claude plugins install tldr@verylegit-marketplace
+claude plugins install tbh@verylegit-marketplace
 claude plugins install bear-notes@verylegit-marketplace
 claude plugins install ios-simulator@verylegit-marketplace
 ```
@@ -172,6 +173,43 @@ Type `/tldr` with no arguments right after any verbose response:
 ```
 
 You get 1-3 sentences max, in plain language. If code was in the original, only the essential code survives.
+
+---
+
+## tbh
+
+**Ask a question when you suspect the default answer is just agreement.**
+
+`/tbh` wraps your question with explicit anti-sycophancy framing. It tells Claude to stress-test your premise, surface your hidden assumptions, and disagree directly when you're wrong — no "great question" preamble, no false balance, no burying the disagreement three paragraphs down.
+
+Use it when you're unsure and want a real second opinion instead of validation.
+
+### What it does
+
+Before answering, Claude runs an audit:
+
+1. **Audit the premise** — if the question is built on a false assumption, correct the frame instead of answering the wrong question
+2. **Surface hidden assumptions** — list what you're quietly taking for granted
+3. **Disagree directly** — "You're wrong about X" beats softened pushback
+4. **Name what you're missing** — the angle or tradeoff your question skips
+5. **No false balance** — if one answer clearly wins, say so
+6. **Flag real uncertainty** — plainly, and only when it matters
+
+Banned phrases: "Great question", "You're absolutely right", "That's a good point", and hedge-flavored "it depends" without saying what it depends on.
+
+### Usage
+
+```
+/tbh Should I use SwiftData for the local cache?
+```
+
+```
+/tbh Is server-driven UI a good fit for a 3-person team?
+```
+
+```
+/tbh My plan is to shard by user_id — any reason not to?
+```
 
 ---
 

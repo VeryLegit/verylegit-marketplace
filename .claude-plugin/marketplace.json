@@ -34,6 +34,12 @@
       "description": "Brutally simplify any output — strip the fluff and give the shortest possible summary.",
       "source": "./plugins/tldr",
       "category": "productivity"
+    },
+    {
+      "name": "tbh",
+      "description": "Anti-sycophancy question wrapper — pushes back, surfaces assumptions, disagrees when warranted instead of just agreeing with you.",
+      "source": "./plugins/tbh",
+      "category": "personality"
     }
   ]
 }

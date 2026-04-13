@@ -1,0 +1,17 @@
+{
+  "name": "tbh",
+  "version": "1.0.0",
+  "description": "Anti-sycophancy question wrapper — pushes back, surfaces assumptions, disagrees when warranted instead of just agreeing with you.",
+  "author": {
+    "name": "VeryLegit"
+  },
+  "commands": ["./commands"],
+  "keywords": [
+    "tbh",
+    "honesty",
+    "anti-sycophancy",
+    "pushback",
+    "questions",
+    "personality"
+  ]
+}
